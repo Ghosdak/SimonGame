@@ -6,7 +6,7 @@ var level = 0;
 
 $(document).keypress(function() {
   var keycode = event.keyCode;
-  if (keycode == '97') {
+  if (keycode == '97' && started == false) {
     started = true;
     nextSequence();
   }
